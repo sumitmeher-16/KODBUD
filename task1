@@ -1,0 +1,23 @@
+#input
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+print("Select operation:")
+print("+ for Addition")
+print("- for Subtraction")
+print("* for Multiplication")
+print("/ for Division")    
+operation=input("Enter operation: ")    
+#perform calculation
+if operation=="+":
+    print("result =",a+b)
+elif operation=="-":
+    print("result =",a-b)
+elif operation=="*":
+    print("result =",a*b)
+elif operation=="/":
+    if b!=0:
+        print("result =",a/b)
+    else:
+        print("Error: Division by zero is not allowed.")
+else:
+        print("Invalid operation selected. Please choose a valid operation.")
