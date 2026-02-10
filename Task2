@@ -1,0 +1,13 @@
+import random   
+a=random.randint(1,100)
+count=0
+guess=0
+while guess!=a:
+    guess=int(input("guess a number between 1 and 100: "))
+    count=count+1
+    if guess<a:
+        print("Too low! Try again.")
+    elif guess>a:
+        print("Too high! Try again.")
+    else:
+        print("Congratulations! You guessed the number in", count, "attempts.") 
